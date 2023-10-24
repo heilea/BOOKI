@@ -121,12 +121,11 @@ input[type="search"] {
 
 
 .filter {
-    width: 758px;
+    max-width: max-content;
     height: 50px;
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: ;
 }
 
 .filter p {
@@ -221,7 +220,11 @@ a {
 }
 
 /****** Hebergements ***********/
+.hebergements {
+    width: 75%;
+}
 .hebergements .hebergement-cards {
+    
     display: flex;
     flex-direction: column;
     gap: 30px; 
@@ -232,15 +235,18 @@ a {
 }
 
 .container_1, .container_2 {
+
     display: flex;
     gap: 30px; 
 }
 
 
 .container_1 img, .container_2 img{
-    width: 250px;
+    
     height: 124px;
     border-radius: 20px 20px 0px 0px;
+    
+    
 }
 
 .hebergement-cards .card {
@@ -317,7 +323,6 @@ a {
     margin: 35px 0px;  
  }
 
-
  .card-container {
     width: 100%;
     display: flex;
@@ -386,7 +391,12 @@ a {
     }
 
     .hebergement-cards{
-        width: 100%;
+      
+        
+    }
+
+    .container_1, .container_2{
+       
     }
     .populaires {
         width: 100%;

@@ -79,6 +79,7 @@ form {
     justify-content: space-between;
     align-items: center;
     border: 1px var(--main-bg-color) solid;  
+    border-radius: 10px 0px 0px 10px;
 }
 
 .fa-location-dot {
@@ -235,24 +236,20 @@ a {
 }
 
 .container_1, .container_2 {
-
     display: flex;
     gap: 30px; 
 }
 
 
 .container_1 img, .container_2 img{
-    
     height: 124px;
-    border-radius: 20px 20px 0px 0px;
-    
-    
+    border-radius: 20px 20px 0px 0px;      
 }
 
 .hebergement-cards .card {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 8px;   
 }
 
 .hebergement-cards .card-title{
@@ -265,6 +262,16 @@ a {
     margin-left: 15px;
     padding-bottom: 10px;
 }   
+
+.hebergements h3 {
+    margin: 30px 0px;
+    font-weight: 22px;
+    font-weight: 700;
+}
+
+.hebergements a {
+    flex: 1;
+}
     
 
 
@@ -365,14 +372,14 @@ a {
     font-weight: 700;
 }
 
- .item {
+ .footlink {
     display: flex;
     flex-direction: column;
     gap: 15px;
     flex: 1;
     
  }
- .item p {
+ .footlink p {
     margin: 0px;
  }
 

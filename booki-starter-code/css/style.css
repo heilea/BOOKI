@@ -1,7 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    
 }
 
 
@@ -225,7 +225,7 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-   width: 66%;
+   width: 100%;
 }
 .hebergements .hebergement-cards {
     
@@ -262,8 +262,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-left: 15px;
-    
+    margin-left: 15px;   
 }   
 
 .hebergement-cards .card-content p {
@@ -277,10 +276,9 @@ a {
 
 .hebergements a {
     width: 100%; 
+    display: grid;
 }
     
-.
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -367,11 +365,9 @@ a {
     display: flex;
     align-items: center;
     padding-left: 19px;
+    font-size: 1rem;
 }
 
- .act-card-name p {
-    margin: 0px;
- }
 
 .footbar {
     display: flex;
@@ -446,7 +442,10 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
-   
+   .container{
+    display: grid;
+
+   }
   act-card-photo{
     height: 141px;
   }

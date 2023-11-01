@@ -24,7 +24,6 @@ body {
     justify-content: center;
     margin: 0; 
     
-    /*Pour que la top bar soit identique a la maquette, j'ai remis a zero le margin qui etait par defaut a 8px*/
 
 }
 
@@ -81,7 +80,7 @@ nav{
 }
 
 form {
-    width:377px;
+    width:100%;
     height: 49px;
     display: flex;
     justify-content: space-between;
@@ -110,11 +109,8 @@ input[type="search"] {
 input[type="submit"] {
     display: flex;
     justify-content: center;
-    
-    display: flex;
     border:none;
     background:none;
-    
     padding: 14px 16px;
     border-radius: 0px 10px 10px 0px;
     font-size: 18px;
@@ -123,9 +119,21 @@ input[type="submit"] {
     background-color: var(--main-color);
 }
 
+button{
+    display: none;
+    width: 49px;
+    height: 49px;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, .10);
+}
+
+button .fa-solid  {
+    color: white;
+}
 
 .form-element-icon {
-    
     padding: 15px 18px 16px 18px;
     border-radius: 10px 0px 0px 10px;
     background: var(--main-bg-color);   
@@ -136,9 +144,8 @@ input[type="submit"] {
     align-items: center;
     gap: 15px;
 }
+
 .filter {
-    
-    height: 50px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -457,15 +464,29 @@ a {
     
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px)  {
     /* ... */
 
+    .main-container{
+        padding: inherit;
+    }
     nav{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .nav-links{
+        gap: inherit;
+    }
+
+    .nav-links a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px 15px 0px;
+    }
+    
     .nav-links a:hover{
         padding-bottom: 15px;
         border-bottom: 2px var(--main-color) solid ;
@@ -473,15 +494,69 @@ a {
         border-top: inherit;
     }
 
-    .nav-links{
-        justify-content: center;
+    form{
+        border-radius: 15px;
+    }
+
+    .form-and-filter{
+        padding: 0px 20px;
+    }
+
+    input[type="submit"]{
+        display: none;
+    }
+
+    button{
+        display: initial;
+        
+    }
+
+    .filter{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+    }
+    
+    .hebergements-and-populaires .hebergements{
+        background-color: inherit;
+        padding: 20px;
+    }
+
+    .hebergements-and-populaires .populaires{
+        padding: 30px 20px;
+    }
+    .populaires-cards{
+        flex-direction: column;
+        
+    }
+
+    .populaires-cards a {
+        width: inherit;
     }
 
    .container{
     display: grid;
-
    }
-  act-card-photo{
+
+   .card-container{
+    flex-direction: column;
+   }
+
+    act-card-photo{
     height: 141px;
+    }
+
+  .footbar{
+    flex-direction: column;
+    gap: 50px;
   }
 }

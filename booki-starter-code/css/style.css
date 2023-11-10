@@ -462,6 +462,9 @@ a {
     .populaires-cards a {
         width: inherit;
     }
+    section.hosting{
+        background-color: #FFFFFF;
+    }
    .container{
     display: grid;
    }
